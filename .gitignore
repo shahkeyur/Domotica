@@ -3,4 +3,5 @@
 .gcc-flags.json
 .piolibdeps
 .travis.yml
+platformio.ini
 lib
