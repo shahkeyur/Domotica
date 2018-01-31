@@ -94,18 +94,11 @@ void DomoticaClass::_onMqttConnect(bool sessionPresent) {
   Interface::get().ready = true;
     Interface::get().getLogger() << F("✔  Connected to MQTT.") << endl;
 
-  String topic_srting_byname = String(_config.get().mqtt.baseTopic);
-  topic_srting_byname = topic_srting_byname + _config.get().name;
-  char topic_byname[MAX_MQTT_TOPIC_LENGTH];
-  (topic_srting_byname+"/#").toCharArray(topic_byname,MAX_MQTT_TOPIC_LENGTH);
+  String topic = String(_config.get().mqtt.baseTopic);
+  char topic_buffer[MAX_MQTT_TOPIC_LENGTH];
+  (topic + "#").toCharArray(topic_buffer, MAX_MQTT_TOPIC_LENGTH);
 
-  String topic_srting_byid = String(_config.get().mqtt.baseTopic);
-  topic_srting_byid = topic_srting_byid + DeviceId::getName();
-  char topic_byid[MAX_MQTT_TOPIC_LENGTH];
-  (topic_srting_byid+"/#").toCharArray(topic_byid,MAX_MQTT_TOPIC_LENGTH);
-
-  getMqttClient().subscribe(topic_byname, 2);
-  getMqttClient().subscribe(topic_byid, 2);
+  getMqttClient().subscribe(topic_buffer, 0);
 
   getMqttClient().publish("domotica/connected", 0, true, "true");
   char buf[15];
