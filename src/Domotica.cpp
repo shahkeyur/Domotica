@@ -43,9 +43,14 @@ void DomoticaClass::loop() {
   // }
 }
 
+void DomoticaClass::onMqttMessage(callback ptr_reg_callback)
+{
+    printf("inside register_callback\n");
+    onMqttMessageCallback = *ptr_reg_callback;
+}
 void DomoticaClass::_connectWifi()
 {
-  Interface::get().getLogger() << F("Connecting to ") <<_config.get().wifi.ssid<< endl;
+  Interface::get().getLogger()   << F("Connecting to ") <<_config.get().wifi.ssid<< endl;
   WiFi.hostname(DeviceId::getName());
   WiFi.begin(_config.get().wifi.ssid, _config.get().wifi.password);
 }
@@ -122,6 +127,10 @@ void DomoticaClass::_onMqttDisconnect(AsyncMqttClientDisconnectReason reason) {
 
 void DomoticaClass::_onMqttMessage(char* topic, char* payload, AsyncMqttClientMessageProperties properties, size_t len, size_t index, size_t total) {
   Interface::get().getLogger() << F("Message Received:") << endl << topic << F(" --> ") << payload << endl;
+  if (*onMqttMessageCallback != NULL) {
+      (*onMqttMessageCallback)(topic,payload);
+  }
+
   _checkForEvent(topic,payload);
 }
 

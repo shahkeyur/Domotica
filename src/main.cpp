@@ -1,9 +1,10 @@
 #include "Domotica.h"
 
-  void setup(){
-    Domotica.setup();
-  }
+void setup(){
+  Serial.begin(74880);
+  Domotica.setup();
+}
 
-  void loop(){
-    Domotica.loop();
-  }
+void loop(){
+  Domotica.loop();
+}

@@ -29,7 +29,8 @@ class DomoticaClass {
   bool isConfigured();
   bool isConnected();
 
-
+  typedef void (*callback)(char*,char*);
+  void onMqttMessage(callback ptr_reg_callback);
 
   AsyncMqttClient& getMqttClient();
   Logger& getLogger();
@@ -43,6 +44,7 @@ class DomoticaClass {
   void _connectMqtt();
   void _setupCallbacks();
   void _checkForEvent(char* topic,char* payload);
+  callback onMqttMessageCallback;
 
   H4 _reconnectTimer;
   uint32_t _wifiReconnectCounter;
