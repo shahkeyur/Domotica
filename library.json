@@ -1,0 +1,53 @@
+{
+  "name": "Domotica",
+  "version": "1.0.0",
+  "keywords": "iot, home, automation, mqtt, esp8266, async",
+  "description": "ESP8266 easy automatic wifi and mqtt connections",
+  "homepage": "https://github.com/shahkeyur/Domotica/",
+  "license": "MIT",
+  "authors":
+  {
+    "name": "Keyur Shah",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/shahkeyur/Domotica.git",
+    "branch": "master"
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif8266",
+  "dependencies": [
+    {
+      "name": "ArduinoJson",
+      "version": "^5.10.0"
+    },
+    {
+      "name": "AsyncMqttClient",
+      "version": "^0.8.0"
+    },
+    {
+      "name": "h4",
+      "version": "^0.9.3"
+    },
+    {
+      "name": "mDNSResolver"
+    },
+     {
+       "name": "ESPAsyncTCP",
+       "version": "^1.1.0",
+     },
+     {
+       "name": "AsyncTCP",
+       "version": "^1.0.0",
+     }
+  ],
+  "export": {
+    "include": [
+      "LICENSE",
+      "src/*",
+      "examples/*"
+    ]
+  }
+}

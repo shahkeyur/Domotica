@@ -115,6 +115,13 @@ bool Config::load() {
   if (parsedJson["mqtt"].as<JsonObject&>().containsKey("baseTopic")) {
     strlcpy(_configStruct.mqtt.baseTopic, parsedJson["mqtt"]["baseTopic"], MAX_MQTT_BASE_TOPIC_LENGTH);
   }
+
+  bool ota = false;
+  if (parsedJson["ota"].as<JsonObject&>().containsKey("enabled")) {
+    ota = parsedJson["ota"]["enabled"];
+  }
+_configStruct.ota.enabled = ota;
+
   return true;
 }
 /*

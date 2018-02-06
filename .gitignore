@@ -4,4 +4,3 @@
 .piolibdeps
 .travis.yml
 platformio.ini
-lib

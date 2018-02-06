@@ -11,12 +11,12 @@ class Logger : public Print {
   Logger();
   virtual size_t write(uint8_t character);
   virtual size_t write(const uint8_t* buffer, size_t size);
+  void setLogging(bool enable);
 
  private:
   void setPrinter(Print* printer);
-  void setLogging(bool enable);
 
   bool _loggingEnabled;
   Print* _printer;
 };
-} 
+}
