@@ -28,26 +28,24 @@
       "version": "^0.8.0"
     },
     {
-      "name": "h4",
+      "name": "H4",
       "version": "^0.9.3"
     },
     {
-      "name": "mDNSResolver"
+      "name": "ESPAsyncTCP",
+      "version": "^1.1.0"
     },
-     {
-       "name": "ESPAsyncTCP",
-       "version": "^1.1.0",
-     },
-     {
-       "name": "AsyncTCP",
-       "version": "^1.0.0",
-     }
+    {
+      "name": "mDNSResolver",
+      "version": "https://github.com/madpilot/mDNSResolver"
+    }
   ],
   "export": {
     "include": [
       "LICENSE",
       "src/*",
-      "examples/*"
+      "examples/*",
+      "data/*"
     ]
   }
 }
