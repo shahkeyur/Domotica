@@ -36,17 +36,8 @@
       "version": "^1.1.0"
     },
     {
-<<<<<<< HEAD
       "name": "mDNSResolver",
       "version": "https://github.com/madpilot/mDNSResolver"
-=======
-      "name": "ESPAsyncTCP",
-      "version": "^1.1.0"
-    },
-    {
-      "name": "AsyncTCP",
-      "version": "^1.0.0"
->>>>>>> 576c1fcb07be52117aaf04edec22c1372024c737
     }
   ],
   "export": {

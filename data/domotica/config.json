@@ -8,5 +8,8 @@
     "host": "sksmarthome.local",
     "port": 1883,
     "baseTopic": "myhome/first/master/"
+  },
+  "ota": {
+    "enabled" : "true"
   }
 }
