@@ -25,8 +25,8 @@ Happy coding with PlatformIO!
 * Automatic connection/reconnection to Wi-Fi/MQTT
 * [JSON configuration](https://github.com/shahkeyur/Domotica/tree/master/data/domotica) file to configure the device
 * Automatic hostname resolution for MQTT broker
-* OTA support
-* Available in the [PlatformIO registry](http://platformio.org/#!/lib/show/555/Homie)
+* [OTA support](http://docs.platformio.org/en/latest/platforms/espressif8266.html#over-the-air-ota-update)
+* Available in the [PlatformIO registry](https://platformio.org/lib/show/2980/Domotica)
 * Easy to use
 
 ```c++
