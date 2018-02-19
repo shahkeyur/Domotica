@@ -1,11 +1,11 @@
 {
   "name": "Kitchen-Node",
   "wifi": {
-    "ssid": "SS",
-    "password": "Change5555"
+    "ssid": "MyWifiName",
+    "password": "password"
   },
   "mqtt": {
-    "host": "sksmarthome.local",
+    "host": "hostname.local",
     "port": 1883,
     "baseTopic": "myhome/first/master/"
   },
