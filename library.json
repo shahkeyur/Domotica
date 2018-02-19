@@ -5,6 +5,7 @@
   "description": "ESP8266 easy automatic wifi and mqtt connections",
   "homepage": "https://github.com/shahkeyur/Domotica/",
   "license": "MIT",
+  "examples": ["examples/*/*.cpp"],
   "authors":
   {
     "name": "Keyur Shah",
