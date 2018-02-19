@@ -10,6 +10,7 @@ Finally initiate the [SPIFFS upload process](http://docs.platformio.org/en/stabl
 
 JSON format for config.json
 ===================
+```json
 {
   "name": "The kitchen light",
   "device_id": "kitchen-light",
@@ -29,3 +30,4 @@ JSON format for config.json
     "enabled": true
   }
 }
+```
