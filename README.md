@@ -1,7 +1,4 @@
-# Domotica
-![Domotica banner](banner.png)
-
-Domotica for ESP8266
+# Domotica for ESP8266
 =================
 
 An Arduino for ESP8266 implementation of [Domotica](https://github.com/shahkeyur/Domotica), an MQTT convention for the IoT.
