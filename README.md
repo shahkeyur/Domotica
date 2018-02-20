@@ -42,6 +42,12 @@ void loop(){
 }
 
 ```
+## Other useful libraries
+
+* [Homie](https://github.com/marvinroger/homie-esp8266)
+* [WiFi Manager](https://github.com/tzapu/WiFiManager)
+* [Async MQTT Client](https://github.com/marvinroger/async-mqtt-client)
+* [mDNSResolver](https://github.com/madpilot/mDNSResolver)
 
 ## Donate
 
