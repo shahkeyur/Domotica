@@ -2,10 +2,10 @@
   "name": "Domotica",
   "version": "1.0.0",
   "keywords": "iot, home, automation, mqtt, esp8266, async",
-  "description": "ESP8266 easy automatic wifi and mqtt connections",
+  "description": "Small library for automatic Wifi and MQTT connection with OTA support based on JSON configuration",
   "homepage": "https://github.com/shahkeyur/Domotica/",
   "license": "MIT",
-  "examples": ["examples/*/*.cpp"],
+  "examples": ["examples/*"],
   "authors":
   {
     "name": "Keyur Shah",
