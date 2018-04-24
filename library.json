@@ -5,7 +5,7 @@
   "description": "Small library for automatic Wifi and MQTT connection with OTA support based on JSON configuration",
   "homepage": "https://github.com/shahkeyur/Domotica/",
   "license": "MIT",
-  "examples": ["examples/*"],
+  "examples": ["examples/*.cpp"],
   "authors":
   {
     "name": "Keyur Shah",
